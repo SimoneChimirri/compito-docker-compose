@@ -19,7 +19,7 @@ generare un docker-compose che avvii entrambi i container.
 
 
 
-FASE 2 (opzionale):
+FASE 2 (opzionale) (non ancora presente):
 
 avviare un container mysql;
 
