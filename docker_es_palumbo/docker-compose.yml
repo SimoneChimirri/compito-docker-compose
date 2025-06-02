@@ -1,0 +1,16 @@
+services:
+  backend:
+    image: backend-test
+    build: .
+    ports:
+      - "8080:8080"
+
+  frontend:
+    image: frontend-test
+    build:
+      context: ./FE
+      dockerfile: DockerfileFE
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
